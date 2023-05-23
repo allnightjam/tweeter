@@ -1,0 +1,21 @@
+.parent {
+  display:flex;
+  height: 610px;
+  width: 100%;
+  padding: 6em;
+  background-color: #fff0d1;
+  background-image: url(http://www.transparenttextures.com/patterns/billie-holiday.png);
+  justify-content: center;
+}
+
+.avatarname {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
