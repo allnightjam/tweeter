@@ -20,8 +20,8 @@ button {
   color: white;
   background-color: #4056A1;
   transition: all .5s ease-in-out;
-  
 }
+
 button:hover {
   background: white;
   color: #4056A1;
@@ -50,4 +50,7 @@ form {
   flex-direction: column;
 }
 
-
+.characteristics {
+  display:flex;
+  justify-content: space-between;
+}

@@ -19,19 +19,22 @@
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script src = "/scripts/composer-char-counter.js"></script>
+    <!-- Viewport -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span class="logo">tweeter</span>
       <div class="right">
         <span class="words">
-          <span><strong>Write</strong> a new tweet </strong> </span>
+          <span class="logo-words"> Write a new tweet </span>
         </span> 
         <button class = "scroll">
           <i class="fa-solid fa-angles-down"></i>
@@ -40,9 +43,9 @@
     </nav>
 
     <!-- Header -->
-    
+    <div class="main-parent">
     <header class="parent">
-      <div>
+      <div class="mini-parent">
         <div class="avatar">
             <img src="/images/profile-hex.png"> 
         </div>
@@ -62,47 +65,13 @@
             <button type="submit" name="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
+          <div id ="error-container">
+          </div>
         </form>
       </section>
-
       <section id="tweets-container">
-        <article class="tweet">
-          <header>
-            <div class="top-left">
-              <span class="image">
-                <img src="https://i.imgur.com/73hZDYK.png" alt="user-avatar" />
-              </span>
-              <span>
-                John Jones
-              </span>
-            </div>
-            <div class="handle">
-              <h2>@handle</h2>
-            </div>
-          </header>
-          <div class="tweet-line">
-            <h4 class="tweet-words">tweet text</h4>
-          </div>
-          <footer>
-            <div class="bottom">
-            <span class="time">
-              <h6 class="time-length">10 days ago</h6>
-            </span>
-              <span class="icons">
-                <span class="heart">
-                  <i class="fa-solid fa-heart"></i>
-                </span>
-                <span class="retweet">
-                  <i class="fa-solid fa-retweet"></i>
-                </span>
-                <span class="flag">
-                  <i class="fa-solid fa-flag"></i>
-                </span>
-              </span>
-            </div>
-          </footer>
-        </article>
       </section>
     </main>
+  </div>
   </body>
 </html>

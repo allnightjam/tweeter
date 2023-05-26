@@ -1,11 +1,15 @@
 .parent {
   display:flex;
   height: 610px;
-  width: 100%;
+  width: 10%;
   padding: 6em;
-  background-color: #fff0d1;
-  background-image: url(http://www.transparenttextures.com/patterns/billie-holiday.png);
   justify-content: center;
+}
+
+.mini-parent {
+  background-color: #4056A1;
+  background-image: url(http://www.transparenttextures.com/patterns/billie-holiday.png);
+  padding: 1.3em;
 }
 
 .avatarname {
@@ -18,4 +22,20 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+/* design changes for when the dimensions of the screen are changed */
+@media (max-width: 1023px) {
+  .parent {
+    height:18em;
+    width: 100%;
+    background-color: #4056A1;
+    background-image: url(http://www.transparenttextures.com/patterns/billie-holiday.png);
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-parent {
+    display:flex;
+  }
 }

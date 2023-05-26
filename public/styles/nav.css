@@ -1,5 +1,6 @@
 nav {
   display: flex;
+  padding: 0 1.5em;
   height: 120px;
   width: 100%;
   color: #FFFFFF;
@@ -7,12 +8,33 @@ nav {
   font-family: "Bungee";
   justify-content: space-between;
   position: fixed;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+}
+
+button:hover {
+  background:#4056A1 ;
+  color: white;
+}
+
+.logo-words {
+  display: flex;
+  font-size: 20px;
+}
+
+.scroll {
+  display: flex;
+  font-size: 20px;
 }
 
 .right {
   display: flex;
   flex-direction: column;
-  margin: 1.5em;
   justify-content: center;
   align-items: center;
 }
