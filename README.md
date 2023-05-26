@@ -1,7 +1,10 @@
 # Tweeter Project
 
+!["Screenshot of the main page"]
+(https://github.com/allnightjam/tweeter/blob/master/docs/main-page.jpg?raw=true)
 
-
+!["Screenshot of an empty tweet error"]
+(https://github.com/allnightjam/tweeter/blob/master/docs/empty-tweet.jpg?raw=true)
 
 Tweeter is a simple, single-page Twitter clone.
 
