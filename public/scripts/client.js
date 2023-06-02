@@ -93,6 +93,9 @@ const submitTweet = function(tweet) {
     $("textarea").val("");
     $(".counter").text("140");
   })
+  .catch((error) => {
+    console.error(error);
+  })
 }
 
 /* this function helps prevent potential vulnerabilities */
@@ -132,3 +135,78 @@ $("form").on("submit", function(event) {
 //   dataType: 
 
 // });
+
+
+// loadTweets = function() {
+//   $.get("/tweets")
+//   .then(function () {
+//     renderTweets(data)
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//  })
+// }
+// function loadTweets () {
+//   $.ajax({
+//     url: "/tweets",
+//     method: "GET",
+//     success: function (data){
+//       renderTweets(data);
+//     }
+//   })
+// }
+// function submitTweet (tweet) {
+//   $.ajax({
+//     url: "/tweets",
+//     method: "POST",
+//     success: function(tweet){
+//       loadTweets();
+//       $("textarea").val("");
+//       $(".counter").text("140");
+//     }
+//   })
+// }
+
+// function loadTweets () {
+//   $.ajax({
+//     url: "/tweets",
+//     method: "GET",
+//     success: function (data){
+//       renderTweets(data);
+//     }
+//   })
+// }
+
+// function loadTweets (tweet) {
+//   $.ajax({
+//     url: "/tweets",
+//     method: "POST",
+//     success: function (tweet){
+//       loadTweets();
+//       $("textarea").val("");
+//       $(".counter").text("140");
+//     }
+//   })
+// }
+
+// const loadTweets = function () {
+//   $.ajax("/tweets", tweet)
+//   .then(function () {
+//     renderTweets(data);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   })
+// }
+
+// const submitTweet = function(tweet) {
+//   $.post("/tweets", tweet)
+//   .then(function () {
+//     loadTweets();
+//     $("textarea").val("");
+//     $(".counter").text("140");
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   })
+// }
